@@ -112,13 +112,10 @@ body {
     }
 
     &__eth-days-wrapper {
+        justify-content: space-between;
         margin-bottom: 1rem;
         
         border-bottom: 1px solid $grayish-blue;
-    }
-
-    &__eth-days-wrapper {
-        justify-content: space-between;
     }
 
     &__eth-icon, &__days-left-icon {

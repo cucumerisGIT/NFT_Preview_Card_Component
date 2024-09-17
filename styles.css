@@ -76,11 +76,9 @@ body {
   gap: 0.5rem;
 }
 .hero__eth-days-wrapper {
+  justify-content: space-between;
   margin-bottom: 1rem;
   border-bottom: 1px solid hsl(215, 32%, 27%);
-}
-.hero__eth-days-wrapper {
-  justify-content: space-between;
 }
 .hero__eth-icon, .hero__days-left-icon {
   height: 1.2rem;
