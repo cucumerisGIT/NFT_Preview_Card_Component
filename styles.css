@@ -1,0 +1,135 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* Variables */
+/* Elements */
+html {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  margin: auto 1rem;
+  padding: 1rem;
+  max-width: 300px;
+  border-radius: 20px;
+  background-color: hsl(216, 50%, 16%);
+  /* Elements */
+}
+.hero__image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+.hero__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero__image-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 255, 247, 0.5);
+}
+.hero__title {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  color: hsl(0, 0%, 100%);
+}
+.hero__title-link {
+  text-decoration: none;
+  color: inherit;
+}
+.hero__desc {
+  margin-top: 0;
+  color: hsl(215, 51%, 70%);
+}
+.hero__eth-days-wrapper, .hero__eth-wrapper, .hero__days-left-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.hero__eth-days-wrapper {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.hero__eth-days-wrapper {
+  justify-content: space-between;
+}
+.hero__eth-icon, .hero__days-left-icon {
+  height: 1.2rem;
+}
+.hero__eth {
+  color: hsl(178, 100%, 50%);
+}
+.hero__days-left {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  /* Elements */
+}
+.creator__avatar {
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.creator__text {
+  color: hsl(215, 51%, 70%);
+}
+.creator__name {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(178, 100%, 50%);
+}
+
+@media (hover: hover) {
+  a:hover, img:hover {
+    cursor: pointer;
+  }
+  .hero__title:hover, .creator__name:hover {
+    color: hsl(178, 100%, 50%);
+  }
+  .hero__image-container:hover .hero__image-overlay {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=styles.css.map */
